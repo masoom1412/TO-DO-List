@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: repeating-radial-gradient(circle at 0 0,  #dce2ad, #e9bad7, #8075e0);
+  color: #444;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  border-top-left-radius: 200px; 
+  border-top-right-radius: 200px;
+  border-top-style:solid; 
+  border-top-color: rgb(2, 74, 107);
+
+}
+img{
+    margin-top: 0px;
+    padding-top: 1px;
+    box-shadow: 5px 5px 5px rgb(197, 102, 189);
+}
+@keyframes color-change{
+0%{
+  color: rgb(189, 42, 176);;
+}
+50%{
+  color: rgb(29, 5, 94);
+}
+100%{
+  color: rgb(189, 42, 176);;
+}
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in {
+  animation: slideInFromLeft 2s ease forwards;
+}
+
+h1 {
+  color: rgb(189, 42, 176);
+  font-size: 6rem;
+  text-align: center;
+  opacity: 0.4;
+  padding-top: 1px;
+  margin-top: 2px;
+  text-shadow: 5px 5px 5px rgb(53, 32, 70);
+  animation: color-change 2s linear infinite;
+}
+
+p{
+    color:rgb(49, 28, 66);
+    text-align: center;
+    font-size: larger;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    
+}
+
+form {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  width: 400px;
+}
+
+.input {
+  border: none;
+  color: #161616;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  display: block;
+  width: 100%;
+ 
+}
+
+.input::placeholder {
+  color: #d5d5d5;
+ 
+}
+
+.input:focus {
+  outline-color: rgb(179, 131, 226);
+  
+}
+
+.todos {
+  background-color: #fff;
+  padding:5px;
+  margin: 0px;
+  list-style-type: none;
+ 
+}
+
+.todos li {
+  border-top: 1px solid #e5e5e5;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+.todos li.completed {
+  color: #b6b6b6;
+  text-decoration: line-through;
+}
+
+small {
+  color: #070505;
+  margin-top: 10px;
+  text-align: center;
+  
+}
